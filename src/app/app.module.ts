@@ -13,6 +13,7 @@ import { WebApiService } from './Service/web-api.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -21,14 +22,15 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     AddEmployeeComponent,
     EditEmployeeComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
